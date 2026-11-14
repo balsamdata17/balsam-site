@@ -542,11 +542,10 @@
       state.cat=b.getAttribute("data-cat");render();
     });
     $("#m-reset").addEventListener("click",reset);
-    /* "Enquire" fills the enquiry form, then the normal #contact navigation runs */
+    /* "Enquire" just goes to the enquiry form. Nothing is pre-filled. */
     grid.addEventListener("click",function(e){
       var a=e.target.closest&&e.target.closest("[data-enq]");if(!a)return;
-      var id=a.getAttribute("data-enq"),t=TRACKS.filter(function(x){return x.id===id})[0];
-      if(t)Enq.fill({notBiz:true,interest:t.interest,goal:"I would like mentorship in "+t.name+"."});
+      Enq.fill({notBiz:true});
     });
     /* Home skill chips: open Find a Mentor already filtered to that skill */
     document.addEventListener("click",function(e){
