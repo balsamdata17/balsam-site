@@ -104,7 +104,7 @@ section{padding:72px 0}
 .card li{position:relative;padding-left:28px}
 .card li::before{content:"";position:absolute;left:2px;top:9px;width:9px;height:9px;background:var(--or)}
 .card .btn{margin-top:auto}
-.card.hot{background:linear-gradient(165deg,var(--ch3),var(--ch2));color:#fff;border-color:var(--ch);border-top:4px solid var(--or);transform:translateY(-14px);box-shadow:0 26px 52px rgba(42,33,28,.32)}
+.card.hot{background:linear-gradient(165deg,var(--ch3),var(--ch2));color:#fff;border-color:var(--ch);border-top:4px solid var(--or);.card.hot{background:linear-gradient(165deg,var(--ch3),var(--ch2));color:#fff;border-color:var(--ch);border-top:4px solid var(--or);box-shadow:0 26px 52px rgba(42,33,28,.32)};box-shadow:0 26px 52px rgba(42,33,28,.32)}
 .card.hot h3{color:#fff}
 .card.hot .n{color:#E0D2C3}
 .badge{position:absolute;top:-14px;left:30px;background:var(--or);color:#fff;font-size:12.5px;font-weight:600;padding:4px 16px;border-radius:999px;letter-spacing:.03em}
