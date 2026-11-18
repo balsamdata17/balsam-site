@@ -424,3 +424,55 @@ footer .bot{margin-top:28px;padding-top:20px;border-top:1px solid rgba(42,33,28,
   .phil2 ol{grid-template-columns:repeat(2,1fr)}
   .phil2 li:last-child{grid-column:1/-1}
 }
+/* ===== Footer: compact, horizontal quick links ===== */
+footer{padding:34px 0 18px}
+footer .top{flex-direction:column;align-items:flex-start;gap:18px}
+footer .tg{margin-top:8px}
+footer .r{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:6px 26px;
+  width:100%;
+  padding-top:16px;
+  border-top:1px solid rgba(42,33,28,.15);
+}
+footer .ql{margin:0 6px 0 0;color:var(--or);font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+footer .bot{margin-top:18px;padding-top:16px}
+
+@media(max-width:640px){
+  footer .r{gap:6px 20px}
+  footer .ql{width:100%;margin:0 0 2px}
+}
+/* Footer quick links: spread evenly */
+footer .r{
+  justify-content:space-between;
+  gap:10px 36px;
+  padding-top:20px;
+}
+footer .r a{padding:4px 0}
+footer .ql{margin-right:0}
+
+@media(max-width:900px){
+  footer .r{justify-content:flex-start;gap:10px 30px}
+  footer .ql{width:100%}
+}
+/* Quick Links = title, not orange */
+footer .ql,
+footer .r .ql{
+  color:var(--ch) !important;
+  font-size:19px !important;
+  font-weight:600 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+}
+/* Footer brand text: left aligned, 2 lines */
+footer .top > div:first-child{text-align:left}
+footer .tg{
+  max-width:560px;
+  margin-top:10px;
+  font-size:15px;
+  line-height:1.6;
+  text-align:left;
+}
+footer .lg img{height:48px}
